@@ -1,0 +1,14 @@
+# Fichiers et dossiers à ignorer
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+.env
+.vscode/
+*.tmp
+*.temp
+
+# Fichiers vidéo volumineux
+videos/*.mp4
+videos/*.mov
+videos/*.avi
