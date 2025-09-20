@@ -1,4 +1,4 @@
-# Mon Portfolio - Développeur Full Stack
+# Mon Portfolio - développeuse Full Stack
 
 Un portfolio moderne et responsive créé avec HTML5, CSS3 et JavaScript vanilla.
 
@@ -158,4 +158,4 @@ Ce projet est sous licence libre. Vous pouvez l'utiliser et le modifier selon vo
 
 **Développé avec ❤️ par SABOR Sara**
 
-_Portfolio moderne et professionnel pour développeurs_
+_Portfolio moderne et professionnel pour développeuses_
