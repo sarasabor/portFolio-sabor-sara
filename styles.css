@@ -19,7 +19,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 /* Variables CSS */
@@ -60,7 +60,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 20px;
+    padding: 1rem 40px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -69,6 +69,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     background: var(--gradient-primary);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -145,6 +146,9 @@ body {
     align-items: center;
     position: relative;
     z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 .hero-content {
@@ -160,6 +164,7 @@ body {
 
 .highlight {
     background: var(--gradient-primary);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -266,12 +271,13 @@ body {
 
 /* Sections communes */
 section {
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
+    padding: 0 20px;
 }
 
 .section-title {
@@ -311,6 +317,7 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    margin: 0 20px;
 }
 
 .about-text h3 {
@@ -339,6 +346,7 @@ section {
     font-size: 2rem;
     font-weight: 700;
     background: var(--gradient-primary);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
@@ -404,7 +412,8 @@ section {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
+    margin: 0 20px;
 }
 
 .project-card {
@@ -475,7 +484,7 @@ section {
 }
 
 .project-content {
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 .project-category {
@@ -525,11 +534,12 @@ section {
 .skills-content {
     display: grid;
     gap: 3rem;
+    margin: 0 20px;
 }
 
 .skills-category {
     background: var(--white);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
 }
@@ -599,6 +609,7 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: start;
+    margin: 0 20px;
 }
 
 .contact-item {
@@ -656,7 +667,7 @@ section {
 
 .contact-form {
     background: var(--white);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
 }
@@ -737,6 +748,18 @@ section {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .nav-container {
+        padding: 1rem 30px;
+    }
+    
+    .hero-container {
+        padding: 0 30px;
+    }
+    
     .hero-container,
     .about-content,
     .contact-content {
@@ -751,9 +774,25 @@ section {
     .hero-title {
         font-size: 2.5rem;
     }
+    
+    section {
+        padding: 5rem 0;
+    }
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 25px;
+    }
+    
+    .nav-container {
+        padding: 1rem 25px;
+    }
+    
+    .hero-container {
+        padding: 0 25px;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -820,11 +859,35 @@ section {
     .footer-links {
         justify-content: center;
     }
+    
+    .project-content {
+        padding: 2rem;
+    }
+    
+    .skills-category {
+        padding: 2rem;
+    }
+    
+    .contact-form {
+        padding: 2rem;
+    }
+    
+    section {
+        padding: 4.5rem 0;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 15px;
+        padding: 0 20px;
+    }
+    
+    .nav-container {
+        padding: 1rem 20px;
+    }
+    
+    .hero-container {
+        padding: 0 20px;
     }
 
     .hero-buttons {
@@ -842,6 +905,18 @@ section {
     }
 
     .contact-form {
-        padding: 1.5rem;
+        padding: 2rem;
+    }
+    
+    .project-content {
+        padding: 2rem;
+    }
+    
+    .skills-category {
+        padding: 2rem;
+    }
+    
+    section {
+        padding: 4rem 0;
     }
 }
